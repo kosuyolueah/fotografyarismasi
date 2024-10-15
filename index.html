@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Kayıt Formu</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+
+<script>
+    function toggleRules() {
+        const rulesDiv = document.getElementById('rules');
+        if (rulesDiv.style.display === 'none') {
+            rulesDiv.style.display = 'block';
+        } else {
+            rulesDiv.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
+
+<body>
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="Adsız_tasarım-removebg-preview.png" alt="Logo" style="max-width: 50%; height: auto;">
+</div>
+<h1 class="handwritten" style="font-size: 34px;">"Geleceğin Sağlık Hizmetleri" Temalı</h1>
+<h0 class="handwritten" style="font-size: 34px;">Fotoğraf Yarışması</h0>
+
+<h2>Genel Kurallar Formunu Okuduktan Sonra Kayıt Formunu Doldurabilirsiniz</h2>
+<body>
+   
+    
+    
+        <link rel="styleheet" href="styles.css"> <!-- CSS dosyasını buraya ekliyoruz -->
+    </head>
+    <body>
+        <button onclick="toggleRules()" class="styled-button">- Yarışma kuralları İçin Tıklayınız -</button>
+    
+    
+
+</body>
+<title>Genel Kurallar Butonu</title>
+    <script>
+        function toggleRules() {
+            window.location.href = 'Şartname.html';
+        }
+    </script>
+  
+
+<h2>Katılımcı Kayıt Formu</h2>
+<form id="registration-form" action="#" method="post" name="contact-form">
+    <label for="fullname">Adınız Soyadınız</label>
+    <input type="text" id="fullname" name="Adı-Soyadı" required>
+
+    <label for="email">E-posta</label>
+    <input type="email" id="email" name="E-posta" required>
+
+    <label for="phone">Telefon Numarası</label>
+    <input type="tel" id="phone" name="Telefon-Numarası" required>
+
+    <label for="department">Çalıştığınız Birim</label>
+    <input type="text" id="department" name="Çalıştığı-Birim" required>
+
+    <label for="title">Ünvanınız</label>
+    <input type="text" id="title" name="Ünvanı" required>
+
+    <!-- Gizli alan -->
+    <input type="hidden" id="timestamp" name="timestamp">
+    <br><input type="checkbox" name="accept" value="Yarışma kuralları okudum kabul ediyorum." required> Yarışma kuralları okudum kabul ediyorum.</br>
+    <br><input type="submit" value="Gönder" id="submit"></br>
+</form>
+
+<div id="success-message" style="display:none; color: green; text-align: center; margin-top: 20px;">
+    Formunuz başarıyla gönderildi!
+</div>
+
+<script>
+    // Form yüklendiğinde datetime'ı ayarla
+    window.onload = function() {
+        var now = new Date();
+
+        // Gün, Ay ve Yıl Değerlerini Al
+        var day = String(now.getDate()).padStart(2, '0');
+        var month = String(now.getMonth() + 1).padStart(2, '0');
+        var year = now.getFullYear();
+        var hours = String(now.getHours()).padStart(2, '0');
+        var minutes = String(now.getMinutes()).padStart(2, '0');
+
+        // Tarih ve Saat Formatını Belirle: DD.MM.YYYY HH:MM
+        var formattedDatetime = `${day}.${month}.${year} ${hours}:${minutes}`;
+
+        // Gizli alanı güncelle
+        document.getElementById("timestamp").value = formattedDatetime;
+    };
+
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Formun varsayılan gönderimini durdur
+        
+        // Başarı mesajını göster
+        const successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+        
+        // Mesajı 3 saniye sonra gizle
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 3000);
+        
+        // Burada form verilerini işlemek için AJAX veya Fetch API kullanabilirsin
+        // Örnek: fetch('/submit', { method: 'POST', body: new FormData(this) });
+    });
+</script>
+
+<script src="Google Sheet.js" defer></script>
+<title>İletişim Bilgileri</title>
+
+    <h1>İletişim Bilgileri</h1>
+    <br><strong>Adres:</strong> Denizer Caddesi Cevizli Kavşağı No: 2 Cevizli </br>
+    <p>Kartal / İSTANBUL</p>
+    <br><strong>Telefon:</strong> 0216 500 1 500</br>
+    <br><strong>Web Sitesi:</strong> <a href="https://kosuyolueah.saglik.gov.tr/" target="_blank">kosuyolueah.saglik.gov.tr</br>
+<!-- Sosyal Medya Bağlantıları -->
+<div class="social-icons">
+   <br> <a href="https://www.facebook.com/KosuyoluEAH?mibextid=LQQJ4d" class="icon facebook">
+        <img src="facebook.png" alt="Facebook">
+    </a>
+    <a href="https://x.com/KosuyoluEAH" class="icon twitter">
+        <img src="x.png" alt="Twitter">
+    </a>
+    <a href="https://www.instagram.com/kosuyolueah/" class="icon instagram">
+        <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com/@kosuyolueah" class="icon youtube">
+        <img src="youtube.png" alt="youtube">
+    </a>
+</div>
+
+
+</body>
+</html>

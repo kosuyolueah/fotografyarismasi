@@ -1,0 +1,24 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    height: 10vh; /* Yükseklik */
+}
+
+.button {
+    background-color: #4CAF50; /* Butonun arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    padding: 15px 32px; /* İçerik boşluğu */
+    text-align: center; /* Metni ortala */
+    text-decoration: none; /* Altı çizili yok */
+    font-size: 16px; /* Yazı boyutu */
+    margin: 0; /* Kenar boşluğunu sıfırla */
+    cursor: pointer; /* İmleç değişimi */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    transition: background-color 0.3s; /* Geçiş efekti */
+}
+
+.button:hover {
+    background-color: #45a049; /* Hover rengi */
+}

@@ -1,0 +1,135 @@
+body {
+    background-image: url('Adsız tasarım.gif');
+    background-size: cover; /* Arka plan resmi kaplama */
+    background-position: center; /* Arka planın ortalanması */
+    background-repeat: no-repeat; /* Arka planın tekrar etmemesi */
+    color: rgb(5, 5, 5); /* Metin rengi */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    margin: 0; /* Dış boşlukları sıfırlama */
+    padding: 0; /* İç boşlukları sıfırlama */
+    display: flex; /* Esnek kutu düzeni */
+    flex-direction: column; /* Dikey yön */
+    align-items: center; /* Ortada hizalama */
+    justify-content: center; /* Dikey ortalama */
+    min-height: 100vh; /* En az 100% yükseklik */
+}
+
+h1, h2, h3 {
+    text-align: center; /* Metni ortaya hizalar */
+    opacity: 1; /* Başlıkların tam görünürlüğü */
+    
+}
+
+form {
+    margin: 20px; /* Formun dış boşluğu */
+    max-width: 400px; /* Maksimum genişlik */
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan rengi */
+    padding: 30px; /* İç boşluk */
+    border-radius: 10px; /* Kenar yuvarlama */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    color: white; /* Metin rengi beyaz */
+    display: flex; /* Esnek kutu düzeni */
+    flex-direction: column; /* Dikey yön */
+    align-items: center; /* Ortada hizalama */
+}
+
+label {
+    display: block; /* Etiketin blok olarak görüntülenmesi */
+    margin: 10px 0 5px; /* Boşluk ayarları */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%; /* Genişlik */
+    padding: 10px; /* İç boşluk */
+    margin-bottom: 10px; /* Alt boşluk */
+    border: 2px solid transparent; /* Varsayılan kenar */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-size: 16px; /* Yazı boyutu */
+    transition: border-color 0.3s, transform 0.3s; /* Kenar ve ölçek geçişi */
+    background-color: rgba(255, 255, 255, 0.548); /* Şeffaf arka plan rengi */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #000000; /* Odaklandığında kenar rengi */
+    transform: scale(1.02); /* Küçük ölçek efekti */
+}
+
+input[type="submit"] {
+    background-color: #00b327; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    cursor: pointer; /* İmleçin işaretçi olması */
+    transition: background-color 0.3s, transform 0.3s; /* Geçiş efektleri */
+    font-size: 16px; /* Buton yazı boyutu */
+    padding: 12px; /* Buton iç boşluğu */
+    border-radius: 5px; /* Kenar yuvarlama */
+}
+
+input[type="submit"]:hover {
+    background-color: #008f22; /* Üzerine gelindiğinde arka plan rengi */
+    transform: scale(1.05); /* Üzerine gelindiğinde ölçek efekti */
+}
+
+input[type="submit"]:focus {
+    outline: 2px solid #00b327; /* Odaklandığında vurgulama */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.handwritten {
+    font-family: 'Dancing Script', cursive; /* El yazısı fontu */
+    font-size: 1em; /* Yazı boyutu büyütüldü */
+    color: rgb(5, 5, 5); /* Renk */
+    text-align: center; /* Ortaya hizalama */
+}
+
+/* Duyarlı stiller */
+@media (max-width: 768px) {
+    form {
+        padding: 20px; /* Küçük ekranlar için iç boşluk azaltma */
+        margin: 10px; /* Dış boşluk azaltma */
+        width: 90%; /* Formun genişliğini ayarla */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="submit"] {
+        font-size: 14px; /* Küçük yazı boyutu */
+    }
+   
+            .styled-button {
+                padding: 15px 30px; /* İç boşluk */
+                background-color: #ff260077; /* Arka plan rengi */
+                color: white; /* Yazı rengi */
+                border: none; /* Kenar yok */
+                border-radius: 10px; /* Kenar yuvarlama */
+                cursor: pointer; /* İmleç değişimi */
+                font-size: 18px; /* Yazı boyutu */
+                font-weight: bold; /* Kalın yazı stili */
+                transition: background-color 0.3s, transform 0.2s; /* Geçiş efektleri */
+                box-shadow: 0 5px 15px rgba(250, 0, 0, 0.925); /* Gölge efekti */
+                display: inline-block; /* Düğmenin görünümünü iyileştirmek için */
+            }
+    
+            .styled-button:hover {
+                background-color: #f70303b2; /* Üzerine gelindiğinde arka plan rengi */
+                transform: translateY(-3px); /* Yukarı kaydırma efekti */
+            }
+    
+            .styled-button:active {
+                transform: translateY(1px); /* Tıklandığında aşağı kaydırma efekti */
+                box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2); /* Daha az gölge */
+            }
+    
+           
+
+
+    
+    
+    
+
+}
